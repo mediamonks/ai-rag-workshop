@@ -1,0 +1,4 @@
+STORAGE_DIR = '../data'
+STORAGE_CACHE_DIR = '../cache'
+CHUNK_SIZE = 256
+CHUNK_OVERLAP = 20

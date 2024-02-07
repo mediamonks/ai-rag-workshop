@@ -7,8 +7,10 @@ const embedModel = new HuggingFaceEmbedding({
 
 const response = await embedModel.getTextEmbedding('I like fast sport cars.');
 
-const ferrariEmbeddings = await embedModel.getTextEmbedding('A ferrari.');
-const toyotaEmbedding = await embedModel.getTextEmbedding('A toyota.');
+console.log('response', response);
+
+const ferrariEmbeddings = await embedModel.getTextEmbedding('A red ferrari.');
+const toyotaEmbedding = await embedModel.getTextEmbedding('A slow toyota.');
 const skyEmbedding = await embedModel.getTextEmbedding('The sky is blue.');
 
 const ferrariSimilarity = cosineSimilarity(ferrariEmbeddings, response);
